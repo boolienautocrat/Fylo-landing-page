@@ -66,6 +66,23 @@ h5 {
   font-family: "Raleway", sans-serif;
 }
 
+.benefits span::after {
+  content: "";
+  display: block;
+  height: 1px;
+  margin: 5px 0 0;
+  background-color: #62dfda;
+}
+
+.benefits span {
+  color: #62dfda;
+}
+
+.benefits span img {
+  position: relative;
+  left: 2px;
+}
+
 @media screen and (min-width: 300px) and (max-width: 425px) {
   body {
     height: 4265.8px;
@@ -201,25 +218,13 @@ h5 {
   }
 
   .benefits span {
-    color: #62dfda;
     font-size: 13px;
     margin-top: 15px;
     display: inline-block;
   }
 
-  .benefits span::after {
-    content: "";
-    display: block;
-    height: 1px;
-    margin: 5px 0 0;
-    width: 135px;
-    background-color: #62dfda;
-  }
-
   .benefits span img {
-    position: relative;
     top: 4px;
-    left: 2px;
   }
 
   .testimony {
@@ -484,5 +489,39 @@ h5 {
 
   .feat-card-2 h3 {
     margin-top: 14px;
+  }
+
+  .benefits {
+    gap: 50px;
+    display: flex;
+    align-items: center;
+    padding: 0 80px;
+    margin-top: 150px;
+  }
+
+  .illstr {
+    transform: scale(0.9);
+  }
+
+  .benefits-info {
+    margin-top: 50px;
+    gap: 17px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .benefits-info h3 {
+    line-height: 1.2;
+    font-size: 40px;
+    display: inline-block;
+    width: 350px;
+  }
+
+  .benefits-info span::after {
+    width: 31.3%;
+  }
+
+  .benefits span img {
+    top: 3px;
   }
 }

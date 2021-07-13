@@ -66,6 +66,10 @@ h5 {
   font-family: "Raleway", sans-serif;
 }
 
+.features {
+  display: flex;
+}
+
 .benefits span::after {
   content: "";
   display: block;
@@ -81,6 +85,15 @@ h5 {
 .benefits span img {
   position: relative;
   left: 2px;
+}
+
+.testimony {
+  display: flex;
+}
+
+.test-card {
+  border-radius: 5px;
+  background-color: hsl(219, 30%, 18%);
 }
 
 @media screen and (min-width: 300px) and (max-width: 425px) {
@@ -184,6 +197,7 @@ h5 {
 
   .features {
     padding: 20px 20px;
+    flex-direction: column;
   }
 
   .feat-card {
@@ -228,11 +242,10 @@ h5 {
   }
 
   .testimony {
-    display: flex;
-    gap: 25px;
+    gap: 1.5625rem;
     flex-direction: column;
     text-align: left;
-    padding: 150px 20px 0;
+    padding: 150px 5.33% 0;
   }
 
   .big-quotes {
@@ -243,11 +256,9 @@ h5 {
   }
 
   .test-card {
-    border-radius: 5px;
     padding: 25px 20px;
     margin: 0 auto;
     width: 89.553%;
-    background-color: hsl(219, 30%, 18%);
   }
 
   .test-card p {
@@ -259,7 +270,7 @@ h5 {
 
   .test-card img {
     border-radius: 100px;
-    width: 38px;
+    width: 14.62%;
   }
 
   .client-name {
@@ -455,11 +466,10 @@ h5 {
   }
 
   .features {
-    gap: 100px;
+    gap: 95px;
     flex-wrap: wrap;
     width: 75%;
     margin: 0 auto;
-    display: flex;
     padding: 0 50px;
   }
 
@@ -511,7 +521,7 @@ h5 {
   }
 
   .benefits-info h3 {
-    line-height: 1.2;
+    line-height: 1.1;
     font-size: 40px;
     display: inline-block;
     width: 350px;
@@ -521,7 +531,52 @@ h5 {
     width: 31.3%;
   }
 
+  .benefits span {
+    font-size: 15px;
+    margin-top: 5px;
+  }
+
   .benefits span img {
     top: 3px;
+  }
+
+  .big-quotes {
+    z-index: -1;
+    align-self: baseline;
+    position: relative;
+    left: 85px;
+    bottom: 35px;
+  }
+
+  .testimony {
+    gap: 40px;
+    padding: 0 60px;
+    margin: 150px 0 0;
+  }
+
+  .test-card {
+    height: 190px;
+    flex-basis: 27%;
+    display: block;
+    padding: 30px 25px 25px;
+  }
+
+  .test-card img {
+    width: 13%;
+    border-radius: 50px;
+  }
+
+  .test-card p {
+    line-height: 1.5;
+    font-size: 13px;
+    width: 280px;
+    margin-bottom: 25px;
+  }
+
+  .client-name {
+    display: inline-block;
+    position: relative;
+    left: 10px;
+    bottom: 10px;
   }
 }

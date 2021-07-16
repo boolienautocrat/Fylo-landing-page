@@ -7,9 +7,13 @@
 }
 
 body {
-  background-color: #181e2a;
+  background-color: #181f2b;
   font-family: "Open Sans", sans-serif;
   color: #fff;
+}
+
+p {
+  font-family: "Open Sans", sans-serif;
 }
 
 nav {
@@ -52,6 +56,7 @@ button {
 }
 
 .credits a {
+  cursor: pointer;
   font-size: 16px;
   font-weight: 600;
   padding-left: 3px;
@@ -389,16 +394,6 @@ h5 {
   .icn:hover {
     animation: zoom 1s linear 0s infinite alternate;
   }
-
-  @keyframes zoom {
-    0% {
-      transform: scale(1);
-    }
-
-    100% {
-      transform: scale(1.5);
-    }
-  }
 }
 
 @media screen and (max-width: 1400px) and (min-width: 1024px) {
@@ -406,6 +401,22 @@ h5 {
     padding: 65px 50px 0;
   }
 
+  nav,
+  .nav-items-list,
+  .features,
+  .benefits,
+  .benefits-info,
+  .testimony,
+  .info-comp,
+  .contact,
+  .location,
+  .ph-mail,
+  .number,
+  .email,
+  .info-comp ul,
+  .socials {
+    display: flex;
+  }
   .intro-img {
     padding-top: 70px;
   }
@@ -417,7 +428,6 @@ h5 {
   }
 
   .nav-items-list {
-    display: flex;
     list-style: none;
     margin-left: auto;
     gap: 50px;
@@ -502,8 +512,7 @@ h5 {
   }
 
   .benefits {
-    gap: 50px;
-    display: flex;
+    gap: 30px;
     align-items: center;
     padding: 0 80px;
     margin-top: 150px;
@@ -516,7 +525,6 @@ h5 {
   .benefits-info {
     margin-top: 50px;
     gap: 17px;
-    display: flex;
     flex-direction: column;
   }
 
@@ -556,7 +564,7 @@ h5 {
 
   .test-card {
     height: 190px;
-    flex-basis: 27%;
+    flex-basis: 28%;
     display: block;
     padding: 30px 25px 25px;
   }
@@ -578,5 +586,128 @@ h5 {
     position: relative;
     left: 10px;
     bottom: 10px;
+  }
+
+  .cta-section {
+    border-radius: 10px;
+    position: relative;
+    top: 210px;
+    width: 65%;
+    margin: 0 auto;
+    background-color: hsl(217, 28%, 15%);
+    padding: 50px 70px 35px;
+    text-align: center;
+  }
+
+  .cta-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+  }
+
+  .cta-section p {
+    width: 700px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.5;
+  }
+
+  .main-cta {
+    gap: 40px;
+    display: flex;
+    margin-top: 40px;
+  }
+
+  .input-container {
+    flex: 48%;
+    height: 50px;
+    border-radius: 50px;
+    background: #fff;
+    display: inline-block;
+  }
+
+  .input-container input {
+    width: 90%;
+    height: 100%;
+    border: none;
+    outline: none;
+  }
+
+  .main-cta button {
+    margin: 0;
+    flex: 8%;
+  }
+
+  footer {
+    padding: 200px 70px 0 80px;
+    margin-top: 100px;
+    background-color: hsl(216, 53%, 9%);
+  }
+
+  .info-comp {
+    gap: 100px;
+    margin-top: 30px;
+  }
+
+  .info-comp ul {
+    flex-direction: column;
+    gap: 17px;
+  }
+
+  .info-comp ul,
+  .socials {
+    flex: 10%;
+  }
+
+  .contact {
+    gap: 70px;
+    flex: 70%;
+  }
+
+  .location {
+    flex: 50%;
+    flex-basis: 35%;
+    gap: 20px;
+    align-items: baseline;
+  }
+
+  .ph-mail {
+    flex: 6%;
+    gap: 18px;
+    flex-direction: column;
+  }
+
+  .number,
+  .email {
+    gap: 20px;
+    align-items: baseline;
+  }
+
+  .socials {
+    gap: 25px;
+    align-items: baseline;
+  }
+
+  .icn:hover {
+    cursor: pointer;
+    animation: zoom 1s linear 0s infinite alternate;
+  }
+
+  .location img {
+    position: relative;
+    top: 5px;
+  }
+
+  .credits {
+    padding: 90px 0 20px;
+  }
+}
+
+@keyframes zoom {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
   }
 }

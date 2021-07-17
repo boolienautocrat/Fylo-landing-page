@@ -129,7 +129,7 @@ h5 {
 
   .nav-items-list {
     margin-left: auto;
-    gap: 15px;
+    gap: 5vw;
     font-size: 13px;
     display: flex;
   }
@@ -196,7 +196,7 @@ h5 {
 
   .intro-text p {
     margin: 0 auto;
-    width: 320px;
+    width: 85.333vw;
     font-size: 15px;
   }
 
@@ -247,7 +247,7 @@ h5 {
   }
 
   .testimony {
-    gap: 1.5625rem;
+    gap: 7vw;
     flex-direction: column;
     text-align: left;
     padding: 150px 5.33% 0;

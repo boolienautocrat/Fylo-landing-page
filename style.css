@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   background-color: #181f2b;
   font-family: "Open Sans", sans-serif;
@@ -101,6 +105,12 @@ h5 {
   background-color: hsl(219, 30%, 18%);
 }
 
+.btn-btt {
+  cursor: pointer;
+  display: none;
+  position: fixed;
+  background: #202a3c;
+}
 @media screen and (min-width: 300px) and (max-width: 425px) {
   body {
     height: 4265.8px;
@@ -393,6 +403,16 @@ h5 {
 
   .icn:hover {
     animation: zoom 1s linear 0s infinite alternate;
+  }
+
+  .btn-btt {
+    margin: 0px;
+    width: 50px;
+    display: block;
+    bottom: 20px;
+    right: 20px;
+    padding: 15px 13px;
+    z-index: 2;
   }
 }
 
@@ -699,6 +719,14 @@ h5 {
 
   .credits {
     padding: 90px 0 20px;
+  }
+
+  .btn-btt {
+    width: 55px;
+    height: 56px;
+    right: 30px;
+    bottom: 30px;
+    padding: 15px 16px;
   }
 }
 

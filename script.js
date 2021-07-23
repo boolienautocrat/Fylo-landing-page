@@ -1,5 +1,7 @@
 var button = document.querySelector(".btn-btt")
 var html = document.querySelector("html")
+var errorMsg = document.querySelector(".error-msg")
+var input = document.querySelector("input")
 
 
 window.addEventListener("scroll", function () {
@@ -23,3 +25,16 @@ if (window.matchMedia("(max-width: 400px)").matches) {
         }
     })
 }
+
+input.addEventListener("invalid",
+    function (e) {
+        e.preventDefault();
+    });
+
+input.addEventListener("keypress", function () {
+    if (!input.checkValidity()) {
+        errorMsg.innerHTML = "Please enter a valid email address"
+    } else if (input.checkValidity()) {
+        errorMsg.innerHTML = " "
+    }
+})

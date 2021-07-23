@@ -34,6 +34,7 @@ a {
 }
 
 button {
+  cursor: pointer;
   color: #fff;
   background-image: linear-gradient(
     to bottom right,
@@ -301,31 +302,44 @@ h5 {
 
   .cta-section {
     z-index: 2;
-    padding: 40px 30px 30px;
+    padding: 40px 30px 5px;
     border-radius: 10px;
     background-color: hsl(217, 28%, 15%);
     margin: 150px 20px 0;
   }
 
-  .cta-section p {
+  .cta-section > p {
     width: 101.82%;
     margin: 20px auto 0;
   }
 
-  .cta-section span {
+  .main-cta {
+    gap: 35px;
+    margin: 25px 0;
+    flex-direction: column;
+    display: flex;
+  }
+
+  .input-container {
+    height: 52px;
     width: 95%;
     text-align: left;
-    margin-top: 25px;
     display: inline-block;
     background: #fff;
     border-radius: 50px;
-    padding: 15px;
-    margin-bottom: 25px;
+    padding: 15px 15px 0;
   }
 
-  input {
+  .email-input {
     margin-left: 15px;
     border: none;
+  }
+
+  .error-msg {
+    position: relative;
+    top: 20px;
+    font-size: 12px;
+    color: #c8555a;
   }
 
   input:focus {
@@ -615,7 +629,7 @@ h5 {
     width: 65%;
     margin: 0 auto;
     background-color: hsl(217, 28%, 15%);
-    padding: 50px 70px 35px;
+    padding: 50px 70px 40px;
     text-align: center;
   }
 
@@ -727,6 +741,15 @@ h5 {
     right: 30px;
     bottom: 30px;
     padding: 15px 16px;
+  }
+
+  .error-msg {
+    color: #c8555a;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    text-align: left;
+    margin: 10px 0 0 25px !important;
+    width: 100% !important;
   }
 }
 

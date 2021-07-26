@@ -113,10 +113,6 @@ h5 {
   background: #202a3c;
 }
 @media screen and (min-width: 300px) and (max-width: 425px) {
-  body {
-    height: 4265.8px;
-  }
-
   nav {
     background: hsl(217, 28%, 15%);
     padding: 5.34% 5.34% 0;
@@ -356,7 +352,7 @@ h5 {
   footer {
     background: hsl(216, 53%, 9%);
     position: relative;
-    bottom: 275px;
+    margin-top: -275px;
     padding: 250px 20px 0 25px;
   }
 
